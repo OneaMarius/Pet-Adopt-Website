@@ -1,0 +1,195 @@
+
+.top {
+    width: 100%;
+    /* min-width: 350px; */
+    height: 20%;
+    /* border: 1px solid black; */
+    box-sizing:border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.main {
+    width: 100%;
+    height: 70%;
+    /* border: 1px solid black; */
+    box-sizing:border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: var(--cardsize3);
+   
+    font-family: 'Redressed', cursive;
+    /* font-size: 1rem; */
+
+}
+.bottom {
+    width: 100%;
+    height: 10%;
+    /* border: 1px solid black; */
+    box-sizing:border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: var(--cardsize2);
+}
+
+.date {
+    width: 100%;
+    height: 30%;
+    /* border: 1px solid black; */
+    box-sizing:border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    font-size: var(--cardsize1);
+}
+
+.name {
+    width: fit-content;
+    min-width: 40%;
+    height: fit-content;
+    padding: 0.25rem 1rem;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 25px;
+    box-sizing:border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-size: var(--cardsize2);
+    
+}
+
+.btn1 {
+    width: 45%;
+    height: 90%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: var(--cardsize2);
+    
+}
+
+.btn2 {
+    width: 45%;
+    height: 90%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: var(--cardsize2);
+}
+
+.main .petImg {
+    width: 80%;
+    height: 80%;
+    box-shadow: 1px 1px 5px black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.bottom a {
+    text-decoration: none;
+    color: black;
+}
+
+.petStatus {
+    width: 25%;
+    height: 25%;
+    /* background-color: bisque; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.petFollowers {
+    width: 25%;
+    height: 25%;
+    /* background-color: bisque; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.statusImg {
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    
+}
+
+.followersCount {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--cardsize2);
+    
+}
+
+.followersCountDinamic {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--cardsize2);
+    
+    animation-name: rotateAnim;
+   animation-duration: 1s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-delay: 0s;
+   animation-direction: normal;
+
+}
+
+
+
+@keyframes rotateAnim {
+    0% {
+       transform: rotateY(0deg);
+    }
+    50% {
+       transform: rotateY(90deg);
+    }
+    51% {
+       transform: rotateY(270deg);
+    }
+    100% {
+       transform: rotateY(360deg);
+    }
+ }

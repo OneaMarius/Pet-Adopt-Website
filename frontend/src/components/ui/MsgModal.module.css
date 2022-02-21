@@ -1,0 +1,398 @@
+@keyframes open {
+   0% {
+      opacity: 0;
+      transform: translateY(200px);
+   }
+   25% {
+      opacity: 1;
+      transform: translateY(0px);
+   }
+   75% {
+      opacity: 1;
+      transform: translateY(0px);
+   }
+   100% {
+      opacity: 0;
+      transform: translateY(200px);
+   }
+}
+
+@keyframes openAsk {
+   0% {
+      opacity: 0;
+      /* transform: translateY(200px); */
+   }
+   100% {
+      opacity: 1;
+      /* transform: translateY(200px); */
+   }
+}
+
+@keyframes closeAsk {
+   0% {
+      opacity: 1;
+      /* transform: translateY(200px); */
+   }
+   100% {
+      opacity: 0;
+      /* transform: translateY(200px); */
+   }
+}
+
+@keyframes openMobile {
+   0% {
+      opacity: 0;
+      transform: translateY(-200px);
+   }
+   25% {
+      opacity: 1;
+      transform: translateY(0px);
+   }
+   75% {
+      opacity: 1;
+      transform: translateY(0px);
+   }
+   100% {
+      opacity: 0;
+      transform: translateY(-200px);
+   }
+}
+
+.MsgModal {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+
+   background-color: rgba(0, 0, 0, 0.5);
+   z-index: 2;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   --border-radius: 15px;
+   animation-name: openAsk;
+   animation-duration: 0.25s;
+   animation-timing-function: ease-in;
+   animation-fill-mode: forwards;
+   animation-iteration-count: 1;
+}
+
+.MsgModalClose {
+   animation-name: closeAsk;
+   animation-duration: 0.5s;
+   animation-timing-function: ease-in;
+   animation-fill-mode: forwards;
+   animation-iteration-count: 1;
+}
+
+.MsgModalInfo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    animation-name: openMobile;
+
+   z-index: 2;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   animation-duration: 4s;
+   animation-timing-function: ease-in;
+   animation-fill-mode: forwards;
+   animation-iteration-count: 1;
+}
+
+.MsgModalInfo .MsgCard {
+   /* background-color: white; */
+   width: 100%;
+   height: 100%;
+   box-shadow: 4px 4px 12px black;
+   border-radius: var(--border-radius);
+}
+
+.MsgModalInfo .info {
+    height: 100%;
+    display: flex;
+ }
+
+.MsgModalInfo .titleInfo {
+    width: 30%;
+    height: 100%;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+ }
+ 
+ .MsgModalInfo .titleError {
+    width: 30%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: monospace;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+ }
+
+ .MsgModalInfo .message {
+    width: 70%;
+    height: 100%;
+ }
+
+ .MsgModalInfo .controls {
+    width: 0px;
+    height: 0px;
+ }
+
+.MsgCard {
+   /* background-color: white; */
+   width: 25%;
+   height: 25%;
+   box-shadow: 4px 4px 12px black;
+   border-radius: var(--border-radius);
+}
+
+
+
+.info {
+   height: 75%;
+}
+
+
+
+.titleAsk {
+   height: 30%;
+   background-color: #1f1f1f;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 2rem;
+   font-weight: bold;
+   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+   border-top-left-radius: var(--border-radius);
+   border-top-right-radius: var(--border-radius);
+}
+
+.message {
+   height: 70%;
+   background-color: rgb(57, 157, 238);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 2rem;
+}
+
+
+.controls {
+   height: 25%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   border-top: 3px solid black;
+   background-color: #1f1f1f;
+   border-bottom-left-radius: var(--border-radius);
+   border-bottom-right-radius: var(--border-radius);
+}
+
+.controls div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+
+ .btn {
+   padding: 0.25rem 1rem;
+   font-size: 2rem;
+   border: 2px solid black;
+}
+
+.btn:hover {
+   border: 2px solid white;
+}
+
+@media (max-width: 450px) {
+
+
+   .MsgModalInfo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 150px;
+      animation-name: openMobile;
+   }
+   .MsgModalInfo .MsgCard {
+      width: 100%;
+      height: 100%;
+      box-shadow: 4px 4px 12px black;
+      border-radius: var(--border-radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .MsgModalInfo .info {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+ }
+
+ .MsgModalInfo .titleInfo {
+    height: 100%;
+    width: 30%;
+    background-color: aquamarine;
+
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 0px;
+ }
+
+ .MsgModalInfo .titleError {
+    height: 100%;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    color: red;
+
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: monospace;
+    border-radius: 0px;
+ }
+
+ .MsgModalInfo .message {
+    width: 70%;
+    height: 100%;
+    font-size: 4rem;
+ }
+
+ .MsgModalInfo .controls {
+    width: 0%;
+    height: 0%;
+    font-size: 4rem;
+ }
+
+ .MsgCard {
+    width: 80%;
+    height: 40%;
+ }
+
+
+  .titleAsk {
+      font-size: 5rem;
+  }
+
+  .message {
+    font-size: 6rem;
+}
+
+.btn {
+    padding: 1rem 3rem;
+    font-size: 5rem;
+}
+
+
+
+}
+
+@media (max-height: 450px) {
+    .MsgModalInfo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 75px;
+        animation-name: openMobile;
+     }
+     .MsgModalInfo .MsgCard {
+        width: 100%;
+        height: 100%;
+        box-shadow: 4px 4px 12px black;
+        border-radius: var(--border-radius);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+  
+     
+  
+     .MsgModalInfo .info {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+   }
+  
+   .MsgModalInfo .titleInfo {
+      height: 100%;
+      width: 30%;
+      background-color: aquamarine;
+  
+      font-size: 3rem;
+      font-weight: bold;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      border-radius: 0px;
+   }
+  
+   .MsgModalInfo .titleError {
+      height: 100%;
+      width: 30%;
+      background-color: rgb(255, 255, 255);
+      color: red;
+  
+      font-size: 3rem;
+      font-weight: bold;
+      font-family: monospace;
+      border-radius: 0px;
+   }
+  
+   .MsgModalInfo .message {
+      width: 70%;
+      height: 100%;
+      font-size: 3rem;
+   }
+  
+   .MsgModalInfo .controls {
+      width: 0%;
+      height: 0%;
+      font-size: 4rem;
+   }
+  
+   .MsgCard {
+      width: 70%;
+      height: 60%;
+   }
+  
+  
+    .titleAsk {
+        font-size: 4rem;
+    }
+  
+    .message {
+      font-size: 4rem;
+  }
+  
+  .btn {
+  
+      font-size: 3rem;
+      padding: 0.25rem 3rem;
+  }
+} 
+  

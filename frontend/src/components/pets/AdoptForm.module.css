@@ -1,0 +1,196 @@
+.form {
+   width: 60%;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-direction: column;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.element {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-direction: column;
+   margin: 0.5rem auto;
+}
+
+.elementA {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 0.5rem auto;
+}
+
+.element select {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   width: 30%;
+   height: 3ch;
+   border-radius: 10px;
+}
+
+.element option {
+   height: 4ch;
+}
+
+.elementA select {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   width: 50%;
+   height: 3ch;
+   border-radius: 10px;
+}
+
+.radio {
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   justify-content: space-evenly;
+   /* margin: auto 2rem; */
+}
+
+.radioEl {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+
+.element fieldset {
+   width: 100%;
+   border-radius: 12px;
+}
+
+.element input {
+   width: 100%;
+   height: 3ch;
+   border-radius: 7px;
+   text-align: center;
+}
+
+.element label,
+.element legend {
+   font-weight: bold;
+}
+
+.radioEl label {
+   font-weight: normal;
+}
+
+.element button {
+   margin-top: 1rem;
+}
+
+@media (max-width: 450px) {
+   .form {
+      width: 80%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+   }
+
+   .element {
+      margin: 2rem auto;
+   }
+
+   .element input {
+      width: 100%;
+      height: 4rem;
+      font-size: 3rem;
+      border-radius: 25px;
+      margin-top: 0.5rem;
+      text-align: center;
+   }
+
+   .element label,
+   .element legend {
+      font-weight: bold;
+      font-size: 2.5rem;
+   }
+
+   .element button {
+      margin: 2rem;
+      font-size: 4rem;
+      border: 3px solid black;
+   }
+
+   .element select {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 30%;
+      height: 4rem;
+      font-size: 3rem;
+      border-radius: 10px;
+      margin-top: 1rem;
+   }
+
+   .element option {
+      height: 1rem;
+   }
+}
+
+@media (max-height: 450px) {
+   .form {
+      width: 80%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+   }
+
+   .element {
+      margin: 1rem auto;
+
+   }
+
+
+
+   .element input {
+      width: 100%;
+      height: 4rem;
+      font-size: 3rem;
+      border-radius: 25px;
+      margin-top: 0.5rem;
+      text-align: center;
+   }
+
+   .element label,
+   .element legend {
+      font-weight: bold;
+      font-size: 2.5rem;
+   }
+
+   .element button {
+      margin: 2rem;
+      font-size: 4rem;
+      border: 3px solid black;
+   }
+
+   .element select {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 30%;
+      height: 4rem;
+      font-size: 3rem;
+      border-radius: 10px;
+      margin-top: 0.5rem;
+   }
+
+   .element option {
+      height: 1rem;
+   }
+}

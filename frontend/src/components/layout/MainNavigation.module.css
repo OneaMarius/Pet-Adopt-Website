@@ -1,0 +1,122 @@
+.header {
+   height: 75px;
+   width: 100%;
+   min-width: 1300px;
+   background-color: rgb(5, 189, 51);
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 2rem;
+   margin: 0;
+   user-select: none;
+   overflow: hidden;
+   /* font-family: 'Montserrat', sans-serif; */
+   font-family: 'Redressed', cursive;
+   /* font-family: 'Roboto', sans-serif; */
+   font-weight: bold;
+}
+
+.logo {
+   margin: 0px 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.logoUser {
+   margin: 0px 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.logo img{
+  width: 90px;
+  height: 80px;
+  
+}
+
+.logoUser img{
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+ }
+
+.nav {
+   width: 100%;
+}
+
+.nav .ul_login {
+   width: auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   margin: 0;
+   padding: 0;
+}
+
+.nav .ul_logout {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 0;
+   padding: 0;
+}
+
+/* .nav .ul_logout li {
+    margin: 0px 50px;
+}
+
+.nav .ul_login li {
+    margin: 0px 50px;
+} */
+
+.nav li {
+   list-style: none;
+   margin: 0px 50px;
+}
+
+.nav a {
+   text-decoration: none;
+   color: black;
+}
+
+.nav a:hover,
+.nav a:active,
+.nav a.active {
+   color: white;
+}
+
+@media (max-width: 450px) {
+   .header {
+      font-size: 55px;
+      height: 150px;
+      text-align: center;
+   }
+
+   .logo img{
+      width: 140px;
+      height: 140px;
+    }
+
+    .logoUser img{
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+}
+
+@media (max-height: 450px) {
+    .header {
+        font-size: 2rem;
+        height: 75px;
+        text-align: center;
+     }
+
+     .logoUser img{
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+    }
+}

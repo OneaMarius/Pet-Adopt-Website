@@ -1,0 +1,200 @@
+.AdoptRequest {
+   width: 98%;
+   /* height: 150px; */
+   /* border: 1px solid black; */
+   background-color: #696969;
+
+   display: flex;
+   flex-direction: column;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: bold;
+}
+
+.data {
+   background-color: #3f3f3f;
+   width: 100%;
+   height: 80%;
+
+   display: flex;
+   /* align-items: center; */
+   justify-content: space-between;
+}
+
+.control {
+   background-color: rgb(5, 189, 51);
+   width: 100%;
+   height: 2.5rem;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.infoSection {
+   background-color: rgb(255, 255, 255);
+   height: 100%;
+   min-height: 116px;
+   width: 63%;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+
+.avatarSection {
+   background-color: rgb(255, 255, 255);
+   max-height: 100%;
+   min-height: 116px;
+   width: 33%;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.info {
+   width: 100%;
+   height: 2rem;
+   font-size: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.infoLabel {
+  margin-left: 1rem;
+}
+.infoData {
+  margin-right: 1rem;
+}
+
+.avatar {
+   width: 50px;
+   height: 50px;
+   background-color: azure;
+   box-shadow: 1px 1px 4px black;
+   border-radius: 50%;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin: 0.25rem;
+}
+
+.status {
+   background-color: rgb(5, 189, 51);
+   width: 100%;
+   height: 20%;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.closeIcon {
+   width: 2rem;
+   height: 2rem;
+   position: absolute;
+   right: 0rem;
+   top: 0rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   /* background-color: white;
+   border-radius: 50%;
+   border: 2px solid black;
+   box-shadow: 2px 2px 5px black; */
+}
+
+.closeIcon i {
+   transition: all 0.2s linear;
+   color: rgb(255, 255, 255);
+   font-size: 2rem;
+   border-radius: 50%;
+}
+
+.closeIcon i:hover {
+   font-size: 2.5rem;
+   color: rgb(5, 189, 51);
+   
+
+}
+
+.time{
+   color: white;
+   position: absolute;
+   top: 0rem;
+   left: calc(50% - 50px) ;
+   font-size: 0.75rem;
+   /* font-style: italic;  */
+} 
+
+.cardB {
+   padding: 1rem;
+}
+
+@media (max-width:450px) {
+   .cardB {
+      padding: 1.5rem;
+      width: 90%;
+   }
+
+   .time{
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      top: -0.35rem;
+      left: calc(50% - 100px) ;
+   } 
+
+
+
+   .status {
+      font-size: 2rem;
+   }
+
+   .control {
+   height: 4rem;
+   }
+
+   .ctrlBtn {
+      font-size: 2rem;
+   }
+
+   .info {
+      height: 100px;
+   }
+   .infoLabel {
+      font-size: 2rem;
+      display: none;
+    }
+    .infoData {
+      font-size: 2rem;
+      margin-left: 1rem;
+    }
+
+    .avatar {
+      width: 90px;
+      height: 90px;
+      background-color: azure;
+      box-shadow: 1px 1px 4px black;
+      border-radius: 50%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0.25rem;
+   }
+
+   .closeIcon {
+      width: 3rem;
+      height: 3rem;
+   }
+   
+   .closeIcon i {
+      font-size: 2.5rem;
+   }
+   
+   .closeIcon i:hover {
+      font-size: 3rem;  
+   }
+}

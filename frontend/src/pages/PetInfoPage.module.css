@@ -1,0 +1,559 @@
+* {
+   box-sizing: border-box;
+   --heightVar: 500px;
+}
+
+.PetInfoPage {
+   background-color: #696969;
+   height: calc(100% - 75px);
+   width: 100%;
+   min-width: 1300px;
+   display: flex;
+
+   align-items: center;
+   justify-content: center;
+   position: fixed;
+   top: 75px;
+
+   font-family: 'Montserrat', sans-serif;
+/* font-family: 'Redressed', cursive; */
+/* font-family: 'Roboto', sans-serif; */
+
+}
+
+.card {
+   width: 1200px;
+   height: 90%;
+   border-radius: 25px;
+   box-shadow: 0px 0px 8px black;
+   display: flex;
+}
+
+.sectionLeft {
+   width: var(--heightVar);
+   height: 100%;
+   /* border: 1px solid red; */
+   font-size: 1.5rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.sectionRight {
+   width: calc(100% - var(--heightVar));
+   height: 100%;
+   /* border: 1px solid red; */
+   display: flex;
+   /* align-items: center; */
+   justify-content: center;
+}
+
+.sectionLeft .top {
+   height: calc(var(--heightVar) * 3 / 5);
+   width: 100%;
+   /* border: 1px solid green; */
+
+   display: flex;
+   
+}
+.sectionLeft .mid {
+   height: 8%;
+   width: 100%;
+   /* border: 1px solid green; */
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.sectionLeft .bottom {
+   height: calc(90% - var(--heightVar) * 3 / 5);
+   width: 100%;
+   /* border: 1px solid green; */
+
+   display: flex;
+   align-items: center;
+   /* justify-content: center; */
+}
+
+.sectionLeft .mid .petName {
+   width: calc(var(--heightVar) * 3 / 5 - 2%);
+   height: 100%;
+   background-color: #3f3f3f;
+   color: white;
+   border-bottom-left-radius: 25px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.sectionLeft .mid .adoptReq {
+   width: calc(var(--heightVar) * 2 / 5);
+   height: 100%;
+   background-color: #3f3f3f;
+   color: rgb(0, 225, 255);
+   border-bottom-right-radius: 25px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.adoptReqBtn {
+   background-color: rgb(255, 255, 255);
+   border: 3px solid rgb(0, 0, 0);
+   color: rgb(0, 0, 0);
+   font-size: 1.8rem;
+}
+
+.adoptReqBtn:hover {
+   background-color: rgb(0, 0, 0);
+   border: 3px solid rgb(255, 255, 255);
+   color: rgb(255, 255, 255);
+   font-size: 1.8rem;
+}
+
+
+
+.sectionLeft .top .petImg {
+   width: calc(var(--heightVar) * 3 / 5);
+   height: 100%;
+   
+}
+
+.sectionLeft .top .petTopInfo {
+   width: calc(var(--heightVar) * 2 / 5);
+   height: 100%;
+   background-color: #3f3f3f;
+   border-top-right-radius: 25px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.sectionLeft .bottom .petBottomInfo {
+   height: 100%;
+   width: 100%;
+   border-radius: 25px;
+   background-color: #3f3f3f;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.sectionRight .chatBox {
+   height: 100%;
+   width: 97%;
+   border-radius: 25px;
+   background-color: #3f3f3f;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.sectionRight .chatBox .chatViewBox {
+   height: 80%;
+   width: 95%;
+   border-radius: 25px;
+   background-color: rgb(255, 255, 255);
+   overflow: auto;
+}
+.sectionRight .chatBox .chatTypeBox {
+   height: 15%;
+   width: 95%;
+   border-radius: 25px;
+   /* background-color: rgb(156, 156, 155); */
+}
+
+.chatTypeBox form {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+
+   font-size: 1.5rem;
+}
+
+.sectionRight .chatBox .chatTypeBox .chatNewMsg {
+   height: 90%;
+   width: 70%;
+   border-radius: 25px;
+   background-color: rgb(253, 253, 253);
+   padding: 0.5rem;
+   border: none;
+   overflow: hidden;
+   resize: none;
+   font-size: 1.5rem;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.sectionRight .chatBox .chatTypeBox .chatNewMsg:focus {
+   outline: none;
+}
+
+.sectionRight .chatBox .chatTypeBox .chatSendMsg {
+   height: 40%;
+   width: 15%;
+   border-radius: 10px;
+   background-color: rgb(252, 252, 252);
+   border: 3px solid rgb(0, 0, 0);
+   font-size: 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   user-select: none;
+   cursor: pointer;
+}
+
+.sectionRight .chatBox .chatTypeBox .chatSendMsg:hover {
+  background-color: black;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+.petImg {
+   width: 80%;
+   height: 80%;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-radius: 50%;
+}
+
+.info1 {
+   width: 95%;
+   height: 2rem;
+   background-color: rgb(255, 255, 255);
+   border-radius: 25px;
+   padding: 0px 1rem;
+   font-size: 1rem;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.info2 {
+   width: 95%;
+   height: 4rem;
+   background-color: rgb(255, 255, 255);
+   border-radius: 25px;
+   padding: 0px 1rem;
+   font-size: 1.25rem;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.info3 {
+   width: 95%;
+   height: 4rem;
+   background-color: rgb(18, 166, 235);
+   border-radius: 25px;
+   padding: 0px 1rem;
+   font-size: 1.5rem;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   font-weight: bold;
+}
+
+.info4 {
+   width: 95%;
+   height: 4rem;
+   background-color: rgb(41, 250, 21);
+   border-radius: 25px;
+   padding: 0px 1rem;
+   font-size: 1.5rem;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   font-weight: bold;
+}
+
+.info3 label {
+   width: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.updateControl {
+   width: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.bottomBtn1 , .bottomBtn2 {
+   border: 3px solid black;
+}
+
+.bottomBtn1:hover  {
+   border: 3px solid rgb(255, 255, 255);
+}
+
+.bottomBtn2:hover {
+   border: 3px solid rgb(0, 0, 0);
+}
+
+.bottomBtn1 {
+   background-color: #e9e9e9;
+}
+
+.bottomBtn2 {
+   background-color: #000000;
+   color: white;
+}
+
+.bottomBtn2:hover {
+   background-color: white;
+   color: black;
+}
+
+
+
+@media (max-width: 450px) {
+   .PetInfoPage {
+      
+      height: calc(100% - 150px);
+
+      position: fixed;
+      top: 150px;
+      left: 0px;
+
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+   }
+
+   .card {
+      width: 95%;
+      height: 95%;
+      border-radius: 25px;
+      display: flex;
+      background-color: #999;
+      
+   }
+
+   .sectionLeft {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   .sectionRight {
+      width: 100%;
+      /* display: none; */
+   }
+
+   .sectionRight .chatBox .chatViewBox {
+      height: 65%;
+      width: 95%;
+      border-radius: 25px;
+      /* background-color: rgb(179, 178, 178); */
+      overflow: auto;
+   }
+   .sectionRight .chatBox .chatTypeBox {
+      height: 30%;
+      width: 95%;
+      border-radius: 25px;
+      /* background-color: rgb(156, 156, 155); */
+   }
+
+   .chatTypeBox form {
+      flex-direction: column;
+   }
+
+   .sectionRight .chatBox .chatTypeBox .chatNewMsg {
+      height: 70%;
+      width: 90%;
+      font-size: 5rem;
+   }
+
+   .sectionRight .chatBox .chatTypeBox .chatSendMsg {
+      height: 20%;
+      width: 90%;
+      font-size: 4rem;
+   }
+
+   .sectionLeft .top {
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+   }
+   .sectionLeft .mid {
+      height: 8%;
+   }
+
+   .sectionLeft .bottom {
+      height: 38%;
+   }
+
+   .sectionLeft .top .petImg {
+      width: 600px;
+      height: 600px;
+   }
+   .sectionLeft .top .petTopInfo {
+      height: 40%;
+      width: 100%;
+      border-radius: 25px;
+   }
+
+   .sectionLeft .mid .petName {
+      
+      width: 49%;
+      font-size: 4rem;
+      height: 100%;
+      border-top-left-radius: 25px;
+      overflow: hidden;
+   }
+   .sectionLeft .mid .adoptReq {
+      
+      width: 49%;
+      font-size: 4rem;
+      height: 100%;
+      border-top-right-radius: 25px;
+      text-align: center;
+      background-color: #3f3f3f;
+      
+   }
+
+   .adoptReqBtn {
+      font-size: 4rem;
+      padding: 1rem 1.5rem;
+   }
+
+   .info1 {
+      height: 4rem;
+      font-size: 3rem;
+   }
+
+   .info2 {
+      height: 8rem;
+      font-size: 3rem;
+   }
+
+   .info2 div {
+      text-align: right;
+   }
+
+   .info3 {
+      width: 95%;
+      height: 12rem;
+      font-size: 3rem;
+      text-align: center;
+      
+   }
+
+   .info4 {
+      width: 95%;
+      height: 12rem;
+      font-size: 3rem;
+      text-align: center;
+    
+   }
+
+   .info3 label {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .updateControl {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+   }
+
+   .bottomBtn1 , .bottomBtn2 {
+      font-size: 2.5rem;
+   }
+
+   
+}
+
+@media (max-height: 450px) {
+   .card {
+      width: 95%;
+      height: 95%;
+      border-radius: 25px;
+      display: flex;
+      background-color: #999;
+   }
+
+   .sectionLeft .top {
+      height: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* border-left: 2px solid #3f3f3f;
+      border-top: 2px solid #3f3f3f;
+      border-top-left-radius: 25px; */
+     
+   }
+   .sectionLeft .mid {
+      height: 10%;
+   }
+   .sectionLeft .bottom {
+      height: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .sectionLeft .top .petImg {
+      width: 220px;
+      height: 220px;
+   }
+
+   .sectionLeft .top .petTopInfo {
+      width: calc(100% - 220px);
+   }
+
+   .sectionLeft .mid .petName {
+      width: 220px;
+   }
+   .sectionLeft .mid .adoptReq {
+      width: calc(100% - 220px);
+      background-color: #3f3f3f;
+   }
+
+   .adoptReqBtn {
+      font-size: 1.5rem;
+      padding: 0.25rem 1.5rem;
+   }
+
+   .info2 {
+      height: 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+   }
+
+   .info3, .info4 {
+      border-radius: 10px;
+   }
+
+   .sectionRight .chatBox .chatTypeBox .chatSendMsg {
+      height: 90%;
+      width: 20%;
+      font-size: 2rem;
+   }
+}

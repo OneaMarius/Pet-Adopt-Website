@@ -1,0 +1,76 @@
+.loginPage {
+    background-color: #696969;
+    width: 100%;
+    height: calc(100% - 75px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 75px;
+    left: 0px;
+    /* background-color: green; */
+}
+
+.signupPage {
+    background-color: #696969;
+    width: 100%;
+    height: calc(100% - 75px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 75px;
+    left: 0px;
+    /* background-color: green; */
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.control a {
+    text-decoration: none;
+    color: black;
+}
+
+.switchBtn {
+    background-color: #cfcfcf;
+    font-weight: normal;
+}
+
+@media (max-width:450px) {
+    .control {
+        font-size: 1.5rem;
+    }
+    .switchBtn {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .loginPage, .signupPage {
+        height: calc(100% - 150px);
+        width: 100%;
+        
+        position: fixed;
+        top: 150px; 
+    }
+}
+
+@media (max-height: 450px) {
+    .loginPage, .signupPage {
+        
+        height: calc(100% - 75px);
+        width: 100%;
+        
+        position: fixed;
+        top: 75px; 
+    }
+
+    
+}
