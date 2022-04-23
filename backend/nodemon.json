@@ -1,0 +1,11 @@
+{
+   "env": {
+      "DB_USER": "api_admin",
+      "DB_PASSWORD": "api_password",
+      "DB_DATABASE": "API_ADE",
+      "cloud_name": "asuramy",
+      "api_key": "757573724829912",
+      "api_secret": "KwBKryvogX20ZHpgBvdKL6xrbpI",
+      "cloudinary_folder": "ade-website"
+   }
+}
